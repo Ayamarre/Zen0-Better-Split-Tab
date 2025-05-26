@@ -9,9 +9,11 @@
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/2e89813d-a158-42be-8054-2d23c1908b5e" alt="Splittab header" />
+  <img src="https://github.com/user-attachments/assets/7d2bafbb-3c55-47ff-b7fe-a2b105a08292" alt="Splittab header" />
 </p>
 
+
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/9c50a65e-b681-4f3e-815d-3104614f6b2d" alt="Splittab BefAft" />
+  <img src="https://github.com/user-attachments/assets/4d1491ea-0620-47ea-9b9d-d819c2cf0258" alt="Splittab BefAft" />
 </p>
+
