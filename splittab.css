@@ -1,26 +1,42 @@
 /* >> Zen0 - Better Split Tab
  * >> CSS for split tab with 2 tabs per row.
- * >> Update : 2025-05-27 1.12.8b
+ * >> Update : 2025-10-25 1.17.3b
  * >> Author : Fluntek
  */
 
 tab-group[split-view-group] {
-    display: flex !important;
+  & .tab-group-container {
     flex-wrap: wrap !important;
-    flex-direction: row !important;
-    align-content: flex-start !important;
-    padding: 2px !important;
-    overflow-y: auto !important;
-    gap: 2px !important;
-}
+    padding: 0 !important;
+     
 
-tab-group[split-view-group] > .tabbrowser-tab {
-    flex: 1 1 calc(50% - 2px) !important;
-    min-width: 0 !important;
-    box-sizing: border-box !important;
-    min-height: 36px !important;
-}
+    & > .tabbrowser-tab {
+      :root[zen-sidebar-expanded='true'] & {
+        --tab-min-height: 32px !important;
+      }
 
-#tabbrowser-tabpanels[zen-split-view="true"] .browserSidebarContainer.deck-selected {
-  outline:  var(--zen-colors-border) !important;
+      flex: 0 0 50% !important
+      width: auto !important;
+      max-width: 100% !important;
+      padding-inline: 1px !important;
+      min-height: var(--tab-min-height) !important;
+
+      &:not(:last-child)::after {
+        display: none !important;
+      }
+
+      :root:not([zen-sidebar-expanded='true']) &:not(:last-child)::after {
+        display: none !important;
+      }
+
+      & .tab-content {
+        padding: 0 5px !important;
+      }
+    }
+    
+    & > .tabbrowser-tab:nth-last-of-type(1):nth-of-type(odd) {
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+    }
+  }
 }
