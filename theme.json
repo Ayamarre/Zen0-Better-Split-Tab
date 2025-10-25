@@ -1,0 +1,19 @@
+{
+  "id": "zen0-better-split-tab",
+  "name": "Zen0 Better Split Tab",
+  "description": "Zen Mod that change your splittab",
+  "homepage": "https://github.com/Ayamarre/Zen0-Better-Split-Tab",
+  "readme": "https://raw.githubusercontent.com/Ayamarre/Zen0-Better-Split-Tab/refs/heads/main/README.md",
+  "image": "https://raw.githubusercontent.com/Ayamarre/Zen0-Better-Split-Tab/refs/heads/main/SplitTab.png",
+  "style": "https://raw.githubusercontent.com/Ayamarre/Zen0-Better-Split-Tab/refs/heads/main/userChrome.css",
+  "author": "Ayamarre",
+  "version": "1.17.3b",
+  "tags": [
+    "sine",
+    "fx-autoconfig",
+    "Split Tab"
+  ],
+  "createdAt": "2025-10-25",
+  "updatedAt": "2025-10-25",
+  "fork": ["zen"]
+}
