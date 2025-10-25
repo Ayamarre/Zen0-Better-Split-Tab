@@ -15,7 +15,7 @@ tab-group[split-view-group] {
         --tab-min-height: 32px !important;
       }
 
-      flex: 0 0 50% !important
+      flex: 0 0 50% !important;
       width: auto !important;
       max-width: 100% !important;
       padding-inline: 1px !important;
