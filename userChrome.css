@@ -1,42 +1,37 @@
 /* >> Zen0 - Better Split Tab
  * >> CSS for split tab with 2 tabs per row.
- * >> Update : 2025-10-25 1.17.3b
+ * >> Update : 2025-10-27 1.17.3b
  * >> Author : Fluntek
  */
 
 tab-group[split-view-group] {
-  & .tab-group-container {
+  .tab-group-container {
     flex-wrap: wrap !important;
     padding: 0 !important;
-     
 
-    & > .tabbrowser-tab {
-      :root[zen-sidebar-expanded='true'] & {
-        --tab-min-height: 32px !important;
-      }
-
+    > .tabbrowser-tab {
       flex: 0 0 50% !important;
       width: auto !important;
       max-width: 100% !important;
-      padding-inline: 1px !important;
-      min-height: var(--tab-min-height) !important;
+      padding-inline: 0 !important;
+      min-height: var(--tab-min-height, 32px) !important;
 
-      &:not(:last-child)::after {
+      &::after {
         display: none !important;
       }
 
-      :root:not([zen-sidebar-expanded='true']) &:not(:last-child)::after {
-        display: none !important;
-      }
-
-      & .tab-content {
-        padding: 0 5px !important;
+      .tab-content {
+        padding: 0 6px !important;
       }
     }
-    
-    & > .tabbrowser-tab:nth-last-of-type(1):nth-of-type(odd) {
+
+    > .tabbrowser-tab:nth-last-of-type(1):nth-of-type(odd) {
       flex: 0 0 100% !important;
       max-width: 100% !important;
+    }
+
+    :root[zen-sidebar-expanded='true'] & > .tabbrowser-tab {
+      --tab-min-height: 32px !important;
     }
   }
 }
